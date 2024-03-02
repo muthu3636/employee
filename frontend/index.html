@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>employee Management system</title>
+    <meta
+      name="viewport"
+      content="width=device-width,
+      initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Employee Management</h1>
+      <form id="employeeForm" onsubmit="event.preventDefault(); redirectToNextPage();">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName" id="empname">Employee Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="empId" id="empIdlab">Employee ID</label>
+            <input
+              type="text"
+              id="empId"
+              name="username"
+              placeholder="Enter your id"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="dept" id="departmentlab">Department</label>
+            <select id="department">
+              <option value="cse">CSE</option>
+              <option value="it">IT</option>
+              <option value="ece">ECE</option>
+              <option value="eee">EEE</option>
+            </select>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber" id="phonenumberlab">Phone Number</label>
+            <input
+              type="text"
+              id="phonenumber"
+              name="phoneNumber"
+              placeholder="Enter Phone Number"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="password" id="doblab">Date Of Birth</label>
+            <input type="date" id="dob" name="password" />
+          </div>
+          <div class="user-input-box">
+            <label for="salary" id="salary">Enter your salary</label>
+            <input
+              type="number"
+              id="salaryid"
+              name="confirmPassword"
+              placeholder="Enter your salary"
+            />
+          </div>
+        </div>
+    
+        <div class="gender-details-box">
+          <span class="gender-title">Select your Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <a href="next.html"><button id="next" type="submit">Next</button></a>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
